@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Loan Scoring Software</title>
+    <style>
+        /* * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #ff4b2b, #ff416c);
+        } */
+        
+    </style>
+    <script>
+        function toggleSignup() {
+            document.getElementById("signupForm").style.display = "block";
+        }
+    </script>
+</head>
+<body>
+    <h1 class="logIn">Welcome to Login Page. Enter your username and password, 
+        <br>or if you are new user, click on <a href="#">Sign Up</a>.</h1>
+    <div class="login-container">
+        <h2>Login to Your Account</h2>
+        <form>
+            <div class="input-group">
+                <label for="email">Email or Username</label>
+                <input type="text" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="forgot-password">
+                <a href="#">Forgot Password?</a>
+            </div>
+            <button type="submit" class="login-button">Sign In</button>
+        </form>
+        <div class="signup">
+            <p>Don't have an account? <a onclick="toggleSignup()">Sign Up</a></p>
+        </div>
+    </div>
+    
+    <div class="signup-form" id="signupForm">
+        <h2>Create an Account</h2>
+        <form>
+            <div class="input-group">
+                <label for="new-email">Email</label>
+                <input type="email" id="new-email" name="new-email" required>
+            </div>
+            <div class="input-group">
+                <label for="new-password">Password</label>
+                <input type="password" id="new-password" name="new-password" required>
+            </div>
+            <div class="input-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+            <button type="submit" class="login-button">Sign Up</button>
+        </form>
+    </div>
+    <footer class="footer">
+        <p>Contact us: <a href="mailto:info@nextonbank.com.com">info@nextonbank.com.com</a> | Phone: +234-807 2823 721</p>
+        <p>Follow us: 
+            <a href="https://wwww.Facebook.com/Odukoya.olufemi.33">Facebook</a> | 
+            <a href="http://twitter.com/@adeleke5486">Twitter</a> | 
+            <a href="https:/www.linkedin.com/in/odukoya-oluwafemi-884a6a90/">LinkedIn</a>
+        </p>
+        <p>&copy; 2025 Loan Platform. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #F5F7FA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    width: 420px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    font-weight: 600;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.progress-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.progress-container::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    width: 80%;
+    height: 6px;
+    background: #ddd;
+    transform: translateY(-50%);
+}
+
+.progress-step {
+    background: #ddd;
+    color: white;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.progress-step.active {
+    background: #D32F2F;
+}
+
+.form-step {
+    display: none;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.form-step.active {
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+label {
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+button {
+    background: #D32F2F;
+    color: white;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: #B71C1C;
+}
+
+.prev-btn {
+    background: #1976D2;
+}
+
+.prev-btn:hover {
+    background: #0D47A1;
+}
+
+#loanEstimate {
+    margin-top: 15px;
+    font-weight: bold;
+    background: #1976D2;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+}
